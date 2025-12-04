@@ -1,0 +1,8 @@
+.env
+.env.local
+.env.*.local
+.vscode/launch.json
+.vscode/extensions.json
+*.tar.gz
+.DS_Store
+.vscode
