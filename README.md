@@ -9,7 +9,7 @@ Want to build and push this image? See [QUICKSTART.md](./QUICKSTART.md) for deta
 ### To run this image, execute:
 
 ```
-# docker container run -d --name prometheus -p 9090:9090 linuxtips/prometheus_alpine
+# docker container run -d --name prometheus -p 9090:9090 ghcr.io/blacksheepaul/prometheus-alpine
 ```
 
 Open http://your_ip:9090 to access the interface of Prometheus.
@@ -23,5 +23,5 @@ Open http://your_ip:9090 to access the interface of Prometheus.
 ### To create a swarm service, execute:
 
 ```
-# docker service create --name prometheus -p 9090:9090 linuxtips/prometheus_alpine
+# docker service create --name prometheus -p 9090:9090 ghcr.io/blacksheepaul/prometheus-alpine
 ```
