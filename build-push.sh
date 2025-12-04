@@ -42,13 +42,6 @@ docker build -t "${IMAGE}:latest" \
 
 echo "✅ Image build completed!"
 
-echo "🔑 Checking Docker login status..."
-if ! docker info | grep -q "Username"; then
-    echo "❌ Not logged in to Docker registry. Please run:"
-    echo "   docker login ghcr.io"
-    exit 1
-fi
-
 echo "🚀 Pushing images..."
 
 # Push
