@@ -14,8 +14,7 @@ RUN adduser -s /bin/false -D -H prometheus \
     && mkdir -p /etc/prometheus /prometheus \
     && cp prometheus-${PROMETHEUS_VERSION}.linux-amd64/prometheus /bin/ \
     && cp prometheus-${PROMETHEUS_VERSION}.linux-amd64/promtool /bin/ \
-    && cp -R prometheus-${PROMETHEUS_VERSION}.linux-amd64/console_libraries /etc/prometheus/ \
-    && cp -R prometheus-${PROMETHEUS_VERSION}.linux-amd64/consoles /etc/prometheus/ \
+    && cp prometheus-${PROMETHEUS_VERSION}.linux-amd64/prometheus.yml /etc/prometheus/prometheus.yml.default \
     && rm -rf prometheus-${PROMETHEUS_VERSION}.linux-amd64* \
     && chown -R prometheus:prometheus /etc/prometheus /prometheus \
     && chmod -R g+w /prometheus \
