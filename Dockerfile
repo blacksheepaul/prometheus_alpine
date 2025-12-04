@@ -3,7 +3,7 @@ FROM alpine
 LABEL maintainer="jeferson@linuxtips.com.br"
 LABEL version="1.0"
 
-ENV prometheus_version 2.8.1
+ENV prometheus_version 3.7.3
 
 RUN adduser -s /bin/false -D -H prometheus \
     && adduser -s /bin/false -D -H node_exporter \
